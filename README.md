@@ -1,4 +1,4 @@
-## Snake-Game-using-Python 🐍🎮
+## Snake Game using Python 🐍🎮
 
 ### Motive
 The goal of this project is to develop a classic Snake game utilizing Python and the Pygame library. This exercise is an excellent opportunity to practice object-oriented programming, game development concepts, and the integration of external libraries for graphics and user input. It caters to both beginners looking to strengthen their programming skills and experienced developers interested in game development.
