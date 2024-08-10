@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake Game</title>
-    <link rel="stylesheet" href="/static/styles.css">
+    <title>Snake Game - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Snake Game</h1>
-        <canvas id="gameCanvas" width="800" height="600"></canvas>
-        <button id="startGameButton">Start Game</button>
+    <div class="home-container">
+        <img src="{{ url_for('static', filename='images/home-bg.jpg') }}" alt="">
+        <div class="home-content">
+            <h2>In the Era of Snakes! Welcome to Snake Game</h2>
+            <p>Get ready for some exciting gameplay!</p>
+            <button id="start-btn">Start Game</button>
+        </div>
     </div>
-    <script src="/static/game.js"></script>
 </body>
 </html>

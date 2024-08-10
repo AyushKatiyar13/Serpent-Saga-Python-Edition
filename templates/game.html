@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake Game</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <canvas id="gameCanvas"></canvas>
-    <script src="game.js"></script>
+    <div class="left-side-img">
+        <img src="/static/images/border-img-both-side.jpg" alt="">
+    </div>
+    <div class="right-side-img">
+        <img src="/static/images/border-img-both-side.jpg" alt="">
+    </div>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+    </div>
+    <script src="{{ url_for('static', filename='game.js') }}"></script>
 </body>
 </html>

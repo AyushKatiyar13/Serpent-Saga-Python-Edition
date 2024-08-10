@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown - Snake Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='countdown.css') }}">
+</head>
+<body>
+    <div class="countdown-container">
+        <div class="countdown-content">
+            <div id="instructions">
+                <h2>Controls</h2>
+                <ul>
+                    <li>Up Arrow: Move Up</li>
+                    <li>Down Arrow: Move Down</li>
+                    <li>Left Arrow: Move Left</li>
+                    <li>Right Arrow: Move Right</li>
+                </ul>
+                <h2>Rules</h2>
+                <ul>
+                    <li>Eating an Apple: +10 Points</li>
+                    <li>Eating a Mango: +20 Points</li>
+                </ul>
+            </div>
+            <h1>Get Ready!</h1>
+            <div id="countdown-timer">5</div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='countdown.js') }}"></script>
+</body>
+</html>

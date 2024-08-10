@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #000; /* Solid black background */
+    overflow: hidden;
+    position: relative;
+}
+
+/* Container for the countdown page */
+.countdown-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: #000; /* Ensure the background is black */
+}
+
+/* Content styling */
+.countdown-content {
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 1; /* Ensure content is above animations */
+}
+
+/* Main heading styling */
+h1 {
+    font-size: 2.5rem;
+    color: #ff007f;
+    text-shadow: 0 0 15px rgba(255, 0, 127, 0.8);
+    animation: textGlow 1.5s ease-in-out infinite alternate, textPulse 1s ease-in-out infinite;
+}
+
+/* Countdown timer styling */
+#countdown-timer {
+    font-size: 5rem;
+    color: #00ff99;
+    text-shadow: 0 0 25px rgba(0, 255, 153, 0.8);
+    animation: textGlow 1.5s ease-in-out infinite alternate, textPulse 1s ease-in-out infinite;
+}
+
+/* Button styling */
+#start-game-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #ff0266, #e040fb);
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    animation: btnGlow 1.5s ease-in-out infinite alternate;
+}
+
+#start-game-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #e040fb, #ff0266);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+}
+
+/* Keyframes for animations */
+@keyframes textGlow {
+    0% { text-shadow: 0 0 15px rgba(255, 0, 127, 0.8); }
+    100% { text-shadow: 0 0 30px rgba(255, 0, 127, 1); }
+}
+
+@keyframes textPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes btnGlow {
+    0% { box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6); }
+    50% { box-shadow: 0 15px 30px rgba(255, 193, 7, 0.8); }
+    100% { box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6); }
+}
+
+.countdown-content h2 {
+    color: #ff007f; /* Corrected color value */
+}
+
+.countdown-content li {
+    color: white;
+}

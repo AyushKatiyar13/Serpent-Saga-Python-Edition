@@ -1,0 +1,48 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables file
+.env
+
+# Flask cache
+instance/
+
+# PyCharm project files
+.idea/
+
+# VS Code project files
+.vscode/
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# Log files
+*.log
+
+# Ignore compiled files
+*.pyc
+
+# Ignore IDE and editor specific files
+*.swp
+*.swo
+
+# Ignore virtual environment directories
+venv/
+env/
+
+# Ignore static files that are not needed for version control
+static/images/*.png
+static/images/*.jpg
+static/images/*.jpeg
+static/images/*.gif
+
+# Ignore application specific files
+*.sqlite3
+*.db
+*.log
