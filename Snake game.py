@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Snake Game using Python
 import pygame
 import sys
@@ -356,7 +355,6 @@ def main():
         pygame.display.flip()
         pygame.display.update()
 
-=======
 # Snake Game using Python
 import pygame
 import sys
@@ -714,5 +712,4 @@ def main():
         pygame.display.flip()
         pygame.display.update()
 
->>>>>>> b11cbd856ea7e370ee4f962d329eabebb2f357a9
 main()
