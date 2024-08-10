@@ -36,12 +36,6 @@ Thumbs.db
 venv/
 env/
 
-# Ignore static files that are not needed for version control
-static/images/*.png
-static/images/*.jpg
-static/images/*.jpeg
-static/images/*.gif
-
 # Ignore application specific files
 *.sqlite3
 *.db
