@@ -1,16 +1,14 @@
-from flask import Flask, send_file
-import os
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
-def home():
-    return 'Welcome to the Snake Game! <a href="/game">Play the Game</a>'
+def index():
+    return render_template('index.html')
 
 @app.route('/game')
 def game():
-    # Serve the game.html file from the static folder
-    return send_file('static/game.html')
+    return render_template('game.html')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 10000)))
+    app.run(debug=True)
