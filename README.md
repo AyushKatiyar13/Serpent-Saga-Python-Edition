@@ -101,7 +101,7 @@ For more about my projects, education background, and details, visit my portfoli
 
 Don’t forget to comment and message me your highest score! I’d love to hear about your achievements and any feedback you have.
 
-## 💡 Advice for Future Development
+## 💡 Advice for Future Development:
 
 Feel free to fork this repository and add more features to enhance the game! Here are a couple of suggestions to get you started:
 
